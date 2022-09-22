@@ -313,3 +313,37 @@ body {
     background: none;
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 480px) {
+    .text-nombre, .opcion-elegir {
+        width: 60%;
+        height: 50px;
+    }
+
+    .informacion1 {
+        position: relative;
+        left: -2em;
+    }
+
+    .falta-algo {
+        position: relative;
+        left: -2em;
+    }
+
+    .jugador1-name, .jugador2-name {
+        width: 60%;
+        height: 50px;
+    }
+
+    .opciones-elegir1, .opciones-elegir2 {
+        width: 60%;
+        height: 50px;
+    }
+
+    .nombre1, .nombre2 {
+        position: relative;
+        left: -7.5em;
+    }
+}
