@@ -331,6 +331,7 @@ body {
     .falta-algo {
         position: relative;
         left: -0.8em;
+        margin-top: 2em;
     }
 
     .jugador1-name, .jugador2-name {
