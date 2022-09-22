@@ -325,11 +325,12 @@ body {
     .informacion1 {
         position: relative;
         left: -2em;
+        margin-bottom: 1em;
     }
 
     .falta-algo {
         position: relative;
-        left: -2em;
+        left: 1em;
     }
 
     .jugador1-name, .jugador2-name {
@@ -352,8 +353,7 @@ body {
 @media screen and (max-width: 1366px){
     .title-h1 {
         position: relative;
-        font-size: 35px;
-        top: -1em;
+        font-size: 30px;
     }
     
 }
