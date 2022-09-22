@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Ferney Barbosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@300&family=Montserrat:wght@200;300&family=Quicksand&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@300&family=Montserrat:wght@200;300&family=Quicksand&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="title-h1">Piedra papel o tijeras</h1>
+    </header>
+
+    <section>
+        <div class="botones">
+            <button class="boton-jugarsolo" id="boton-jugarsolo">Jugar Solo</button> <br>
+            <button class="boton-2jugadores" id="boton-2jugadores">2 Jugadores</button>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="jugando-solo">
+            <p class="nota"><strong>Nota:</strong> Al colocar 1, 2 o 3 se está eligiendo de<br>forma aleatoria si es piedra, papel o tijeras.</p>
+            <p class="informacion1">Juegue en contra la pc o el móvil</p>
+            <div class="inputs">
+                <input type="text" class="text-nombre" id="text-nombre" placeholder="Ingrese su nombre" maxlength="7"><br>
+                <input type="text" class="opcion-elegir" id="opcion-elegir" maxlength="8" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <p class="resultado1"></p>
+            <p class="resultado2"></p>
+            <button class="boton-winOrLost" id="boton-winOrLost">Gané o Perdí</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="two-jugadores">
+            <div class="inputs-2">
+                <p class="falta-algo">Por favor ingresar sus nombres.</p>
+                <input type="text" class="jugador1-name" id="jugador1-name" placeholder="Ingrese su nombre jugador N° 1"><br>
+                <input type="text" class="jugador2-name" id="jugador2-name" placeholder="Ingrese su nombre jugador N° 2">
+            </div>
+            <button class="boton-siguiente" id="boton-siguiente">Siguiente</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="parte2-2jugadores">
+            <p class="nota2"><strong>Nota:</strong> Al colocar 1, 2 o 3 se está eligiendo de<br>forma aleatoria si es piedra, papel o tijeras.</p>
+            <div class="inputs-names">
+                <p class="informacion2"></p>
+
+                <p class="nombre1">Jugador 1</p>
+                <input type="text" class="opciones-elegir1" id="opciones-elegir1" placeholder="Ingrese 1, 2 o 3">
+                <p class="nombre2">Jugador 2</p>
+                <input type="text" class="opciones-elegir2" id="opciones-elegir2" placeholder="Ingrese 1, 2 o 3">
+            </div>
+            <p class="result-ganador"></p>
+            <p class="info-result"></p>
+            <button class="boton-ganador" id="boton-ganador">Ver al ganador</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
