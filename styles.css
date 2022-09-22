@@ -325,12 +325,12 @@ body {
     .informacion1 {
         position: relative;
         left: -2em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 
     .falta-algo {
         position: relative;
-        left: 1em;
+        left: -0.8em;
     }
 
     .jugador1-name, .jugador2-name {
