@@ -258,6 +258,7 @@ botonWinOrLost.addEventListener('click', () => {
 botonWinOrLost.addEventListener('click', () => {
     if(sumaPuntos === 0 || sumaPuntos === -50){
         perdidos = 0;
+        perdidosPc = 50;
     } else if (sumaPuntos > 0 || sumaPuntos === 100){
         perdidos = 50;
     }
@@ -267,6 +268,7 @@ if(sumaPuntosPc === 0 || sumaPuntosPc === -50){
     perdidosPc = 0;
 } else if (sumaPuntosPc > 0 || sumaPuntosPc === 100){
     perdidosPc = 50;
+    perdidos = 0;
 }
 
 console.log(`Pc: ${sumaPuntosPc} y jugador ${sumaPuntos}`)
