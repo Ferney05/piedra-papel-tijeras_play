@@ -15,6 +15,7 @@ const twoJugadores = document.querySelector('.two-jugadores');
 const resultado1 = document.querySelector('.resultado1');
 const resultado2 = document.querySelector('.resultado2');
 const informacion1 = document.querySelector('.informacion1');
+const notaPrincipal = document.querySelector('.nota-principal');
 
 // Inputs
 
@@ -26,7 +27,9 @@ const enBlanco = " ";
 
 botonJugarsolo.addEventListener('click', () => {
     jugandoSolo.style.display = 'block';
-    botones.style.display = 'none'
+    botones.style.display = 'none';
+    notaPrincipal.style.display = 'none';
+
 })
 
 

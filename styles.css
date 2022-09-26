@@ -9,7 +9,11 @@ body {
 
 /* Ocultando secciones */
 
-.jugando-solo, .two-jugadores, .parte2-2jugadores{
+.jugando-solo{
+    display: none;
+}
+
+.imagen {
     display: none;
 }
 
@@ -173,8 +177,21 @@ body {
     }
 
     .nota-principal {
-        font-size: 15px;
+        font-size: 17px;
     }
+
+    .imagen {
+        display: none;
+    }
+
+    .img-juego {
+        width: 200px;
+        height: 200px;
+
+        position: relative;
+        top: -1em;
+    }
+
 }
 
 
