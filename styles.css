@@ -32,12 +32,12 @@ body {
 .botones {
     text-align: center;
     position: relative;
-    top: 8em;
+    top: 5em;
 }
 
-.boton-jugarsolo, .boton-2jugadores {
-    width: 350px;
-    height: 60px;
+.boton-jugarsolo {
+    width: 300px;
+    height: 50px;
     background: linear-gradient(80deg, #f57f17, #ffb300);
     color: white;
 
@@ -49,13 +49,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
 
     cursor: pointer;
-}
-
-.boton-2jugadores {
-    margin-top: 2em;
 }
 
 /* SECCIÓN BOTÓN JUGAR SOLO */
@@ -143,97 +139,6 @@ body {
     cursor: pointer;
 }
 
-/* SECCIÓN 2 JUGADORES */
-
-.two-jugadores {
-    text-align: center;
-    position: relative;
-    top: 4em;
-}
-
-.informacion2 {
-    font-size: 15px;
-    position: relative;
-    left: -9.4em;
-    top: -0.4em;
-}
-
-.falta-algo {
-    position: relative;
-    left: -3.7em;
-    top: 0.8em;
-    font-size: 15px;
-}
-
-.result-ganador, .info-result {
-    font-size: 15px;
-}
-
-.result-ganador {
-    position: relative;
-    top: 1em;
-}
-
-.info-result {
-    position: relative;
-    bottom: -0.1em;
-}
-
-.jugador1-name, .jugador2-name {
-    width: 25%;
-    height: 50px;
-    border-radius: 15px;
-    border: 1px solid #f57f17;
-    text-align: center;
-    font-size: 15px;
-
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
-
-    color: #f57f17;
-    outline: none;
-}
-
-.jugador1-name::placeholder {
-    font-size: 15px;
-}
-
-.jugador2-name::placeholder {
-    font-size: 15px;
-}
-
-.inputs-2:focus, .jugador1-name:focus, .jugador1-name[type]:focus, .jugador2-name:focus, .jugador2-name[type]:focus{
-    background-color: #eeeded;
-    border-color: #64dd17;
-    color: black;
-}
-
-.jugador2-name {
-    margin-top: 2em;
-}
-
-.boton-siguiente {
-    width: 200px;
-    height: 60px;
-    margin-top: 2em;
-    border-radius: 15px;
-    border: 1px solid #ffb300;
-
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
-
-    font-size: 15px;
-    color: #ffb300;
-    background: none;
-    cursor: pointer;
-}
-
 .nota-principal {
     position: relative;
     text-align: center;
@@ -277,6 +182,16 @@ body {
     .title-h1 {
         position: relative;
         font-size: 30px;
+    }
+
+    .nota-principal {
+        font-size: 13px;
+    }
+
+    .boton-jugarsolo {
+        width: 350px;
+        height: 60px;
+        font-size: 15px;
     }
     
 }
