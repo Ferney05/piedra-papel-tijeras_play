@@ -185,11 +185,11 @@ body {
     }
 
     .img-juego {
-        width: 50px;
+        width: 60px;
         height: 60px;
 
         position: relative;
-        top: -5em;
+        top: -1em;
     }
 
 }
