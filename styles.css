@@ -268,7 +268,7 @@ body {
     }
 
     .nota-principal {
-        display: none;
+        font-size: 15px;
     }
 }
 
