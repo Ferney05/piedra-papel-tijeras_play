@@ -15,6 +15,16 @@ body {
 
 .imagen {
     display: none;
+    position: relative;
+    text-align: center;
+    top: 8em;
+}
+
+.img-juego {
+    width: 240px;
+    height: 240px;
+
+    border-radius: 15px;
 }
 
 /* Colocando estilos */
@@ -177,19 +187,26 @@ body {
     }
 
     .nota-principal {
-        font-size: 17px;
+        font-size: 19px;
+    }
+
+    .boton-jugarsolo {
+        width: 350px;
+        height: 60px;
+        font-size: 15px;
     }
 
     .imagen {
-        display: none;
-    }
-
-    .img-juego {
-        width: 60px;
-        height: 60px;
-
         position: relative;
-        top: -1em;
+        text-align: center;
+        top: 8em;
+    }
+    
+    .img-juego {
+        width: 240px;
+        height: 240px;
+    
+        border-radius: 15px;
     }
 
 }
@@ -202,13 +219,7 @@ body {
     }
 
     .nota-principal {
-        font-size: 13px;
-    }
-
-    .boton-jugarsolo {
-        width: 350px;
-        height: 60px;
-        font-size: 15px;
+        font-size: 12px;
     }
     
 }
