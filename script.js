@@ -17,7 +17,6 @@ const resultado1 = document.querySelector('.resultado1');
 const resultado2 = document.querySelector('.resultado2');
 const informacion1 = document.querySelector('.informacion1');
 const notaPrincipal = document.querySelector('.nota-principal');
-const imagen = document.querySelector('.imagen');
 
 // Inputs
 
@@ -39,7 +38,6 @@ botonJugarsolo.addEventListener('click', () => {
         jugandoSolo.style.display = 'block';
         botones.style.display = 'none';
         notaPrincipal.style.display = 'none';
-        imagen.style.display = 'none';
         inputs1.style.display = 'none';
     }
 })
