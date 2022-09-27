@@ -154,7 +154,7 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#4527a0';
         botonWinOrLost.style.backgroundColor = '#4527a0';
     } else if(opcionElegir.value === '1' && PC == 3) {
-
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Tijeras y tu has elegido Piedra`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -163,13 +163,14 @@ botonWinOrLost.addEventListener('click', () => {
             icon: 'success',
             title: `Bien hecho ${textNombre.value}`,
             text: `Has obtenido +${sumaPuntos = sumaPuntos + ganados} puntos`,
-            confirmButtonText: 'Aceptar'
+            confirmButtonText: 'Aceptar premio'
         });
 
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '1' && PC == 2) {
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Piedra y tu has elegido Papel`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -178,13 +179,14 @@ botonWinOrLost.addEventListener('click', () => {
             icon: 'success',
             title: `Bien hecho ${textNombre.value}`,
             text: `Has obtenido +${sumaPuntos = sumaPuntos + ganados} puntos`,
-            confirmButtonText: 'Aceptar'
+            confirmButtonText: 'Aceptar premio'
         });
 
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '3' && PC == 2) {
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Papel y tu has elegido Tijeras`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -193,89 +195,87 @@ botonWinOrLost.addEventListener('click', () => {
             icon: 'success',
             title: `Bien hecho ${textNombre.value}`,
             text: `Has obtenido +${sumaPuntos = sumaPuntos + ganados} puntos`,
-            confirmButtonText: 'Aceptar'
+            confirmButtonText: 'Aceptar premio'
         });
 
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '3' && PC == 1) {
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Piedra y tu has elegido Tijeras`;
 
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
 
-        Swal.fire({
-            icon: 'warning',
-            title: `Has perdido ${textNombre.value}`,
-            text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
-            confirmButtonText: 'Aceptar'
-        });
-
+        if(sumaPuntos === 0 || sumaPuntos === -50){
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +0 puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        }
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#ff3d00';
         botonWinOrLost.style.backgroundColor = '#ff3d00';
     } else if(opcionElegir.value === '2' && PC == 1) {
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Papel y tu has elegido Piedra`;
 
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
 
-        Swal.fire({
-            icon: 'warning',
-            title: `Has perdido ${textNombre.value}`,
-            text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
-            confirmButtonText: 'Aceptar'
-        });
+        if(sumaPuntos === 0 || sumaPuntos === -50){
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +0 puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        }
 
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#ff3d00';
         botonWinOrLost.style.backgroundColor = '#ff3d00';
     } else if(opcionElegir.value === '2' && PC == 3) {
+        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Tijeras y tu has elegido Papel`;
         
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
 
-        Swal.fire({
-            icon: 'warning',
-            title: `Has perdido ${textNombre.value}`,
-            text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
-            confirmButtonText: 'Aceptar',
-        });
+        if(sumaPuntos === 0 || sumaPuntos === -50){
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +0 puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: `Oops... Has perdido ${textNombre.value}`,
+                text: `Ahora tienes +${sumaPuntos = sumaPuntos - perdidos} puntos`,
+                confirmButtonText: 'Aceptar derrota',
+            });
+        }
 
         botonWinOrLost.style.color = 'white';
         botonWinOrLost.style.borderColor = '#ff3d00';
         botonWinOrLost.style.backgroundColor = '#ff3d00';
     } 
-})
-
-botonWinOrLost.addEventListener('click', () => {
-    if(sumaPuntos === 750 || sumaPuntos >= 800){
-        Swal.fire({
-            icon: 'success',
-            title: `Has ganado ${textNombre.value}`,
-            text: `Has obtenido los +${sumaPuntos = sumaPuntos + (ganados - 100)} puntos`,
-            confirmButtonText: 'Aceptar'
-        })
-
-        sumaPuntos = 0;
-    } else if(sumaPuntosPc === 750 || sumaPuntosPc >= 800){
-        Swal.fire({
-            icon: 'success',
-            title: `Has perdido por completo ${textNombre.value}`,
-            text: `PC llegó a los +${sumaPuntosPc = sumaPuntosPc + (ganadosPc - 50)} puntos`,
-            confirmButtonText: 'Aceptar'
-        })
-        
-        sumaPuntosPc = 0;
-    }
-})
-
-botonWinOrLost.addEventListener('click', () => {
-    if(sumaPuntos === 0 || sumaPuntos === -50){
-        perdidos = 0;
-        perdidosPc = 50;
-    } else if (sumaPuntos > 0 || sumaPuntos === 100){
-        perdidos = 50;
-    }
 })
 
 if(sumaPuntosPc === 0 || sumaPuntosPc === -50){
