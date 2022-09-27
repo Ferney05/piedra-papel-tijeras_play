@@ -129,6 +129,12 @@ botonWinOrLost.addEventListener('click', () => {
 
     const PC = aleatorio(1, 3);
 
+    if(sumaPuntosPc === 0 || sumaPuntosPc === -50){
+        perdidosPc = 0;
+    } else if(sumaPuntosPc > 0 || sumaPuntosPc === 100){
+        perdidosPc = 50;
+    }
+
     if(opcionElegir.value === '1' && PC == 1) {
         resultado1.innerText = `Hay un empate, nadie ganó ${textNombre.value}`;
         resultado1.style.color = '#4527a0';
@@ -278,12 +284,32 @@ botonWinOrLost.addEventListener('click', () => {
     } 
 })
 
-if(sumaPuntosPc === 0 || sumaPuntosPc === -50){
-    perdidosPc = 0;
-} else if (sumaPuntosPc > 0 || sumaPuntosPc === 100){
-    perdidosPc = 50;
-    perdidos = 0;
-}
+
+botonWinOrLost.addEventListener('click', () => {
+    if(sumaPuntos === 750 || sumaPuntos >= 800){
+        Swal.fire({
+            icon: 'success',
+            title: `Has ganado ${textNombre.value}`,
+            text: `Has obtenido los +800 puntos`,
+            confirmButtonText: 'Aceptar premio'
+        });
+
+        sumaPuntos = 0;
+        sumaPuntosPc = 0;
+        
+    } else if(sumaPuntosPc === 750 || sumaPuntosPc >= 800){
+        Swal.fire({
+            icon: 'error',
+            title: `Oops... Has perdido por completo ${textNombre.value}`,
+            text: `PC o móvil llegó a los +800 puntos`,
+            confirmButtonText: 'Aceptar derrota'
+        });
+
+        sumaPuntosPc = 0;
+        sumaPuntos = 0;
+    }
+})
+
 
 console.log(`Pc: ${sumaPuntosPc} y jugador ${sumaPuntos}`)
 
