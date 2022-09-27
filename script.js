@@ -117,13 +117,11 @@ let PC = aleatorio(1, 3);
 
 let ganados = 100;
 let sumaPuntos = 0;
-let restaPuntos = 0;
 let perdidos = 50;
 
 
 let ganadosPc = 100;
 let sumaPuntosPc = 0;
-let restaPuntosPc = 0;
 let perdidosPc = 50;
 
 

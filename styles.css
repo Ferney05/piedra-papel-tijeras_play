@@ -142,6 +142,7 @@ body {
 .nota-principal {
     position: relative;
     text-align: center;
+    font-size: 15px;
 
     top: 1em;
 }
