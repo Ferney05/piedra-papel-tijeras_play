@@ -8,7 +8,8 @@ const botones = document.querySelector('.botones');
 // Divs
 
 const jugandoSolo = document.querySelector('.jugando-solo');
-const twoJugadores = document.querySelector('.two-jugadores');
+const inputs1 = document.querySelector('.inputs1');
+
 
 // Párrafos - Resultado 
 
@@ -27,11 +28,20 @@ const enBlanco = " ";
 
 
 botonJugarsolo.addEventListener('click', () => {
-    jugandoSolo.style.display = 'block';
-    botones.style.display = 'none';
-    notaPrincipal.style.display = 'none';
-    imagen.style.display = 'none';
-
+    if(textNombre.value.length === 0){
+        Swal.fire({
+            icon: 'warning',
+            title: `!Falta ingresar algo!`,
+            text: `Por favor ingrese su nombre.`,
+            confirmButtonText: 'OKEY'
+        }); 
+    } else if(textNombre.value.length >= 1){
+        jugandoSolo.style.display = 'block';
+        botones.style.display = 'none';
+        notaPrincipal.style.display = 'none';
+        imagen.style.display = 'none';
+        inputs1.style.display = 'none';
+    }
 })
 
 

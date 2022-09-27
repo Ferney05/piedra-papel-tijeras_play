@@ -93,6 +93,13 @@ body {
     font-size: 15px;
 }
 
+.inputs1 {
+    position: relative;
+    text-align: center;
+
+    top: 3em;
+}
+
 .inputs:focus, .text-nombre:focus, .text-nombre[type]:focus, .opcion-elegir:focus, .opcion-elegir[type]:focus{
     background-color: #eeeded;
     border-color: #64dd17;
