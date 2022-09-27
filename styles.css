@@ -182,7 +182,7 @@ body {
     .imagen {
         position: relative;
         text-align: center;
-        top: 8em;
+        top: 12em;
     }
     
     .img-juego {
@@ -199,10 +199,6 @@ body {
     .title-h1 {
         position: relative;
         font-size: 30px;
-    }
-
-    .nota-principal {
-        font-size: 12px;
     }
     
     .imagen {
