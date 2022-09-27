@@ -160,7 +160,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#4527a0';
         botonWinOrLost.style.backgroundColor = '#4527a0';
     } else if(opcionElegir.value === '1' && PC == 3) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Tijeras y tu has elegido Piedra`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -176,7 +175,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '1' && PC == 2) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Piedra y tu has elegido Papel`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -192,7 +190,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '3' && PC == 2) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Papel y tu has elegido Tijeras`;
 
         sumaPuntosPc = sumaPuntosPc - perdidosPc;
@@ -208,7 +205,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#64dd17';
         botonWinOrLost.style.backgroundColor = '#64dd17';
     } else if(opcionElegir.value === '3' && PC == 1) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Piedra y tu has elegido Tijeras`;
 
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
@@ -232,7 +228,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#ff3d00';
         botonWinOrLost.style.backgroundColor = '#ff3d00';
     } else if(opcionElegir.value === '2' && PC == 1) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Papel y tu has elegido Piedra`;
 
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
@@ -257,7 +252,6 @@ botonWinOrLost.addEventListener('click', () => {
         botonWinOrLost.style.borderColor = '#ff3d00';
         botonWinOrLost.style.backgroundColor = '#ff3d00';
     } else if(opcionElegir.value === '2' && PC == 3) {
-        resultado1.style.display = 'none';
         resultado2.innerText = `PC o móvil eligió Tijeras y tu has elegido Papel`;
         
         sumaPuntosPc = sumaPuntosPc + ganadosPc;
@@ -296,7 +290,7 @@ botonWinOrLost.addEventListener('click', () => {
 
         sumaPuntos = 0;
         sumaPuntosPc = 0;
-        
+
     } else if(sumaPuntosPc === 750 || sumaPuntosPc >= 800){
         Swal.fire({
             icon: 'error',
