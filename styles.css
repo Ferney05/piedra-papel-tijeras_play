@@ -86,11 +86,11 @@ body {
 }
 
 .text-nombre::placeholder {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .opcion-elegir::placeholder {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .inputs1 {
@@ -183,6 +183,14 @@ body {
     .boton-jugarsolo {
         width: 350px;
         height: 60px;
+        font-size: 15px;
+    }
+
+    .text-nombre::placeholder {
+        font-size: 15px;
+    }
+    
+    .opcion-elegir::placeholder {
         font-size: 15px;
     }
 }
