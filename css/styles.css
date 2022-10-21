@@ -1,11 +1,28 @@
 
-body {
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Cormorant+Garamond:wght@300&family=Estonia&family=Fleur+De+Leah&family=Gayathri:wght@100&family=Gowun+Batang&family=Grey+Qo&family=Inconsolata:wght@300&family=Josefin+Slab:wght@500&family=League+Spartan:wght@100;200;400;600&family=Merriweather:wght@300&family=Monsieur+La+Doulaise&family=Montserrat:wght@200;300;600;700&family=Quicksand&family=Raleway:wght@200;300;400;600&family=Righteous&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --color-verde-claro: #00C632;
+    --color-naranja-claro: #ec7f25;
+    --color-transparente: #49494900;
+    --color-gris-claro: #c9c8c8;
+    --color-gray-masClaro: #ececec;
+    --color-negro-claro: #333333;
+    --color-morado-oscuro: #6A1B9A;
+    --color-white: #fdfdfd;
 }
+
+* {
+    font-family: var(--fuente-montserrat);
+}
+
+*::selection {
+    background-color: var(--color-morado-oscuro);
+    color: var(--color-white);
+}
+
 
 /* Ocultando secciones */
 
@@ -15,15 +32,20 @@ body {
 
 /* Colocando estilos */
 
-.title-h1 {
-    font-family: 'Anton', sans-serif;
-    position: relative;
+.header__logo-name {
+    padding: 0.5rem 3rem;
     text-align: center;
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    top: 1em;
+    
+    margin-top: 2rem;
+}
 
-    color: #f57f17;
+.header-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    background: linear-gradient(190deg, #ff6600,#dd64a9 40%, var(--color-morado-oscuro) 60%) padding-box;
+    color: var(--color-transparente);
+    -webkit-background-clip: text;
 }
 
 
@@ -37,19 +59,13 @@ body {
 
 .boton-jugarsolo {
     width: 300px;
-    height: 50px;
-    background: linear-gradient(80deg, #f57f17, #ffb300);
+    height: 60px;
+    background: linear-gradient(190deg, #ff6600, #dd64a9, var(--color-morado-oscuro));
     color: white;
 
     border: 0;
     border-radius: 15px;
-
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 
     cursor: pointer;
 }
@@ -69,28 +85,23 @@ body {
 
 .text-nombre, .opcion-elegir {
     width: 25%;
-    height: 40px;
+    height: 50px;
     border-radius: 15px;
-    border: 1px solid #f57f17;
+
+    border: 2px solid var(--color-gris-claro);
     text-align: center;
     font-size: 15px;
 
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
-
-    color: #f57f17;
+    transition: 1s ease-in;
     outline: none;
 }
 
 .text-nombre::placeholder {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .opcion-elegir::placeholder {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .inputs1 {
@@ -100,10 +111,9 @@ body {
     top: 3em;
 }
 
-.inputs:focus, .text-nombre:focus, .text-nombre[type]:focus, .opcion-elegir:focus, .opcion-elegir[type]:focus{
-    background-color: #eeeded;
-    border-color: #64dd17;
-    color: black;
+.text-nombre:focus, .opcion-elegir:focus {
+    border-color: var(--color-morado-oscuro);
+    transition: 1s ease-in;
 }
 
 .opcion-elegir {
@@ -132,18 +142,12 @@ body {
     height: 60px;
     margin-top: 2em;
     border-radius: 15px;
-    border: 1px solid #ffb300;
-
-    font-family: 'Anton', sans-serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    border: none;
 
     font-size: 15px;
-    color: #ffb300;
-    background: none;
+    background: linear-gradient(190deg, #ff6600, #dd64a9, var(--color-morado-oscuro));
     cursor: pointer;
+    color: var(--color-white);
 }
 
 .nota-principal {
@@ -166,6 +170,10 @@ body {
     position: relative;
     left: -0.8em;
     top: -0.5em;
+}
+
+.nota__strong {
+    color: var(--color-naranja-claro);
 }
 
 @media screen and (max-width: 481px) {
