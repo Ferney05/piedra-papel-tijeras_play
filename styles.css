@@ -202,9 +202,14 @@
         font-size: 15px;
     }
 
-    .nota {
-        width: 50%;
-        margin: auto;
+    .nota-principal {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .informacion1 {
+        position: relative;
+        left: -0.5em;
     }
 }
 
