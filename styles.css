@@ -184,7 +184,7 @@
 
     .informacion1 {
         position: relative;
-        left: -2em;
+        left: -0.5em;
         margin-bottom: 2em;
     }
 
@@ -204,12 +204,11 @@
 
     .nota-principal {
         text-align: left;
-        margin-left: 2rem;
+        margin-left: 0.5rem;
     }
 
-    .informacion1 {
-        position: relative;
-        left: -0.5em;
+    .nota {
+        margin-left: 1rem;
     }
 }
 
