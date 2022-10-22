@@ -59,7 +59,7 @@
 
 .boton-jugarsolo {
     width: 300px;
-    height: 60px;
+    height: 70px;
     background: linear-gradient(190deg, #ff6600, #dd64a9, var(--color-morado-oscuro));
     color: white;
 
@@ -139,7 +139,7 @@
 
 .boton-winOrLost {
     width: 200px;
-    height: 60px;
+    height: 70px;
     margin-top: 2em;
     border-radius: 15px;
     border: none;
@@ -200,6 +200,11 @@
     
     .opcion-elegir::placeholder {
         font-size: 15px;
+    }
+
+    .nota {
+        width: 50%;
+        margin: auto;
     }
 }
 
