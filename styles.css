@@ -176,7 +176,7 @@
     color: var(--color-naranja-claro);
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 500px) {
     .text-nombre, .opcion-elegir {
         width: 60%;
         height: 50px;
